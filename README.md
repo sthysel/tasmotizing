@@ -33,9 +33,21 @@ same
 | GND        | Brown  |
 
 
-Install tasmotizer in a Python venv
+I prefer installing tasmotizer in a Python venv:
 
-To program:
+```
+$ python -m venv tasmotizer
+$ source ./tasmotizer/bin/activate
+$ pip install tasmotizer
+```
+
+Using `pipx` would probably been 2 steps less, assuming its already installed:
+
+```
+$ pipx tasmotizer
+```
+
+# Programming the device
 
 * start tasmotizer
 * press the on-board button to set the switch in programming mode
