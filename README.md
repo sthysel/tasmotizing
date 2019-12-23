@@ -54,6 +54,32 @@ To program:
 
 ![Tasmotizer](pics/tasmotizer2.jpg)
 
+# Config device
+
+After flashing:
+
+* close device up
+* plug into socket
+* wait for circle LED to flash green
+* press button 4 times
+* connect to device AP, will be named something like `sonof-6666`
+* connect to device on `http://192.168.4.1`
+* do a scan on the device for local wireless networks and fill in the form
+* reboot device
+
+Now the device should be connected ti your local WiFi, to find it do a nmap search on your local subnet, I use 10.0.0.0/24:
+
+```
+$ sudo nmap -sn 10.0.0.0/24
+...
+Nmap scan report for tasmota-0154 (10.0.0.230)
+Host is up (0.15s latency).
+MAC Address: 5C:CF:7F:3C:50:8C (Espressif)
+...
+```
+
+Connect to the device and set it up.
+
 # Resources
 
 * https://github.com/tasmota/tasmotizer
