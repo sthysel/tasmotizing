@@ -22,8 +22,15 @@ I used more or less sensible colors on the USB2ttl side
 | RX         | Yellow |
 | GND        | Brown  |
 
+On the Sonof switch side the TX and RX pins are swapped, so the colors stay the
+same
 
-
+| Pin        | Color  |
+| ---        | ---    |
+| Vcc (3.3v) | Red    |
+| RX         | Green  |
+| TX         | Yellow |
+| GND        | Brown  |
 
 
 Install tasmotizer in a Python venv
@@ -46,3 +53,8 @@ To program:
 ![Tasmotizer](pics/tasmotizer.jpg)
 
 ![Tasmotizer](pics/tasmotizer2.jpg)
+
+# Resources
+
+* https://github.com/tasmota/tasmotizer
+* https://tasmota.github.io/docs/#/
